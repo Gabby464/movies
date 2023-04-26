@@ -1,0 +1,14 @@
+.card-collection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    justify-items: center;
+
+}
+.card{
+    margin-bottom: 15px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
