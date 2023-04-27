@@ -26,7 +26,6 @@ page('/logout', removeUser)
 
 async function  renderNavBar(){
     const presentUser = await getUser()
-    console.log(presentUser)
     if(presentUser){
        Array.from(document.getElementsByClassName('user')).forEach((element) => element.style.display = 'block');
        Array.from(document.getElementsByClassName('guest')).forEach((element) => element.style.display = 'none');
