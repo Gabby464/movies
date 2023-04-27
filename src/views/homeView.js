@@ -15,10 +15,8 @@ const movieCard = (movie) => html`
     <p class="card-text">${movie.description}</p>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">${movie.genres[0]}</li>
-    <li class="list-group-item">${movie.genres[1]}</li>
-    <li class="list-group-item">${movie.genres[2]}</li>
-  </ul>
+${(movie.genres).map(genre => html`<li class="list-group-item">${genre}</li>`)}  
+</ul>
   <div class="card-body">
     <a href="/edit/${movie._id}" class="card-link">Edit</a>
     <a href="/details/${movie._id}" class="card-link">Details</a>
