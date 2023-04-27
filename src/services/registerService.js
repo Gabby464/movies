@@ -14,7 +14,7 @@ export async function register(email, password){
             throw new Error(error)
         }
         const user = await request.json();
-        localStorage.setItem('user', user);
+        localStorage.setItem('user', JSON.stringify(user));
         alert('Successful Registration')
     } catch (error) {
         alert(error.message);
