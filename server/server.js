@@ -1485,7 +1485,7 @@
     		"1": {
                 "_id": 1,
                 "title": "Beetlejuice",
-                "_owner_Id": "833e0e57-71dc-42c0-b387-0ce0caf5225e",
+                "_ownerId": "833e0e57-71dc-42c0-b387-0ce0caf5225e",
                 "year": "1988",
                 "_createdOn": 1615033373504,
                 "genres": [
@@ -1500,7 +1500,7 @@
             "2": {
                 "_id": 2,
                 "title": "The Cotton Club",
-                "_owner_Id": "833e0e57-71dc-42c0-b387-0ce0caf5225e",
+                "_ownerId": "833e0e57-71dc-42c0-b387-0ce0caf5225e",
                 "year": "1984",
                 "_createdOn": 1615033373504,
                 "genres": [
@@ -1516,7 +1516,7 @@
             "3": {
                 "_id": 3,
                 "title": "The Shawshank Redemption",
-                "_owner_Id": "833e0e57-71dc-42c0-b387-0ce0caf5225e",
+                "_ownerId": "833e0e57-71dc-42c0-b387-0ce0caf5225e",
                 "year": "1994",
                 "_createdOn": 1615033373504,
                 "genres": [
@@ -1531,7 +1531,7 @@
             "4": {
                 "_id": 4,
                 "title": "Crocodile Dundee",
-                "_owner_Id": "833e0e57-71dc-42c0-b387-0ce0caf5225e",
+                "_ownerId": "833e0e57-71dc-42c0-b387-0ce0caf5225e",
                 "year": "1986",
                 "_createdOn": 1615033373504,
                 "genres": [
@@ -1546,7 +1546,7 @@
             "5": {
                 "_id": 5,
                 "title": "Valkyrie",
-                "_owner_Id": "833e0e57-71dc-42c0-b387-0ce0caf5225e",
+                "_ownerId": "833e0e57-71dc-42c0-b387-0ce0caf5225e",
                 "year": "2008",
                 "_createdOn": 1615033373504,
                 "genres": [
@@ -1562,7 +1562,7 @@
             "6": {
                 "_id": 6,
                 "title": "Ratatouille",
-                "_owner_Id": "833e0e57-71dc-42c0-b387-0ce0caf5225e",
+                "_ownerId": "833e0e57-71dc-42c0-b387-0ce0caf5225e",
                 "year": "2007",
                 "_createdOn": 1615033373504,
                 "genres": [
@@ -1578,7 +1578,7 @@
             "7": {
                 "_id": 7,
                 "title": "City of God",
-                "_owner_Id": "833e0e57-71dc-42c0-b387-0ce0caf5225e",
+                "_ownerId": "833e0e57-71dc-42c0-b387-0ce0caf5225e",
                 "year": "2002",
                 "_createdOn": 1615033373504,
                 "genres": [
@@ -1593,7 +1593,7 @@
             "8": {
                 "_id": 8,
                 "title": "Memento",
-                "_owner_Id": "833e0e57-71dc-42c0-b387-0ce0caf5225e",
+                "_ownerId": "833e0e57-71dc-42c0-b387-0ce0caf5225e",
                 "year": "2000",
                 "_createdOn": 1615033373504,
                 "genres": [
@@ -1608,7 +1608,7 @@
             "9": {
                 "_id": 9,
                 "title": "The Intouchables",
-                "_owner_Id": "833e0e57-71dc-42c0-b387-0ce0caf5225e",
+                "_ownerId": "833e0e57-71dc-42c0-b387-0ce0caf5225e",
                 "year": "2011",
                 "_createdOn": 1615033373504,
                 "genres": [
