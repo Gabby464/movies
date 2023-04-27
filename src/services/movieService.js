@@ -1,8 +1,7 @@
 import { getUser } from "./logService.js";
-
 const baseUrl = 'http://localhost:3030/data/movies'
 
-export const getAll = async () => {
+export const getAll = async (baseUrl) => {
     try{
         const response = await fetch(baseUrl);
 
