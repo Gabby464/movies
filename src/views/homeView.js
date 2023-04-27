@@ -1,13 +1,13 @@
 import { html, render, until} from '../lib.js'
 import { getAll } from '../services/movieService.js';
 
-const homeContent = (moviePromise) => html` 
+export const allMoviesContent = (moviePromise) => html` 
 <div class="card-collection">
 ${until(moviePromise, html`<p>Loading<p>`)}
 </div>
 `
 
-const movieCard = (movie) => html`
+export const movieCard = (movie) => html`
 <div class="card" style="width: 18rem;">
   <img src="${movie.posterUrl}" class="card-img-top" alt="...">
   <div class="card-body">
@@ -25,11 +25,12 @@ ${(movie.genres).map(genre => html`<li class="list-group-item">${genre}</li>`)}
 `
 
 export const homeRender = (ctx) => {
-     ctx.render(homeContent(getMovies()))
+     ctx.render(allMoviesContent(getMovies()))
      
 }
 
 async function getMovies(){
-    const movies = await getAll();
+  const baseUrl = 'http://localhost:3030/data/movies'
+    const movies = await getAll(baseUrl);
     return movies.map(movieCard)
 }
