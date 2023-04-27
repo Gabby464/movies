@@ -31,3 +31,20 @@ export async function getUser(){
         return user;
     }
 }
+
+export async function removeUser(ctx){
+  try {
+    const request = await fetch('http://localhost:3030/users/logout');
+    if(!request.ok){
+      if (request.status == 403) {
+        localStorage.removeItem('user');
+        ctx.page.redirect('/')
+      }
+    }
+  } catch (err) {
+    alert(err.message);
+    throw(err)
+  }
+  localStorage.removeItem('user');
+  ctx.page.redirect('/')
+}
