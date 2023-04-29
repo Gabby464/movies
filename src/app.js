@@ -3,7 +3,7 @@ import { page, render } from './lib.js'
 import { loginRender } from './views/loginView.js';
 import { myMoviesRender } from './views/collectionView.js';
 import { registerRender } from './views/registerView.js';
-import { getUser, removeUser } from './services/logService.js';
+import { getUser, removeUser } from './services/authService.js';
 import { createRender } from './views/createView.js';
 import { detailsRender } from './views/detailsView.js';
 
