@@ -1,4 +1,5 @@
 import { getUser } from "./logService.js";
+
 const baseUrl = 'http://localhost:3030/data/movies'
 
 export const getAll = async (baseUrl) => {
@@ -15,11 +16,6 @@ export const getAll = async (baseUrl) => {
         alert(err.message);
         throw(err)
     }
-}
-
-export function getMine(){
-    const user = getUser();
-    const authKey = user['X-Authorization']
 }
 
 export async function createMovie(movieObj, authKey){
@@ -44,5 +40,21 @@ export async function createMovie(movieObj, authKey){
     catch(error){
         alert(error.message);
         throw error;
+    }
+}
+
+export async function getMovie(id){
+    try{
+        const response = await fetch(`http://localhost:3030/data/movies/${id}`)
+
+        if(!response.ok){
+             const error = await response.json();
+             throw new Error(error.message)
+        }else{
+            return response.json()
+        }
+    }catch(err){
+        alert(err.message);
+        throw(err)
     }
 }
