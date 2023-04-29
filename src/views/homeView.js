@@ -18,8 +18,7 @@ export const movieCard = (movie) => html`
 ${(movie.genres).map(genre => html`<li class="list-group-item">${genre}</li>`)}  
 </ul>
   <div class="card-body">
-    <a href="/edit/${movie._id}" class="card-link">Edit</a>
-    <a href="/details/${movie._id}" class="card-link">Details</a>
+    <a href="/${movie._id}" class="card-link">Details</a>
   </div>
 </div>
 `
