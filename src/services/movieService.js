@@ -1,6 +1,6 @@
 
 import * as api from "../api/api.js";
-import { baseUrl, endpoints } from "../api/api.js";
+import { endpoints, baseUrl } from "../api/utils.js";
 
 export const getAll = async (id) => {
     let movies = undefined;

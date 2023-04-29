@@ -1,5 +1,5 @@
 import * as api from "../api/api.js";
-import { endpoints, baseUrl } from "../api/api.js";
+import { endpoints, baseUrl } from "../api/utils.js";
 export async function logIn(email, password) {
   const user = await api.post(baseUrl + endpoints.login, { email, password });
   alert("logged in successfully");

@@ -41,12 +41,4 @@ async function apiRequest(method, url, data) {
 export const get = apiRequest.bind(null, "get");
 export const post = apiRequest.bind(null, "post");
 
-export const endpoints = {
-    login: "/users/login",
-    register: "/users/register",
-    movies: "/data/movies",
-    getMovie: (id) =>`/data/movies/${id}`,
-    getMine: (id) => `/data/movies?where=_ownerId%3D%22${id}%22`,
-    logout: "/users/logout"
-};
-export const baseUrl = "http://localhost:3030";
+
