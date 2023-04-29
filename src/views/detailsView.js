@@ -1,5 +1,5 @@
 import { html, until} from '../lib.js'
-import { getUser } from '../services/logService.js';
+import { getUser } from '../services/authService.js';
 import { getMovie } from '../services/movieService.js';
 
 const detailsContent = (moviePromise) => html` 
@@ -43,7 +43,7 @@ export const detailsRender = (ctx) => {
 async function loadMovie(id){
     const movie = await getMovie(id);
     if(typeof movie.actors !== 'array'){
-        movie.actors = movie.actors.split(', ')
+        movie.actors = movie.actors.split(', ');
     }
     return movieCard(movie)
 }

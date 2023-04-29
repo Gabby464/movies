@@ -1,5 +1,5 @@
 import { html, render} from '../lib.js'
-import { register } from '../services/registerService.js';
+import { register } from '../services/authService.js';
 
 const registerContent = (onSubmit) => html` 
 <h2>Register</h2>

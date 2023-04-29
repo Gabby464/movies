@@ -1,5 +1,5 @@
 import { html} from '../lib.js'
-import { logIn, getUser } from '../services/logService.js';
+import { logIn, getUser } from '../services/authService.js';
 
 const loginContent = (onSubmit) => html` 
 <h2>Login </h2>
