@@ -1,5 +1,5 @@
 import { html, render } from "../lib.js";
-import { getUser } from "../services/logService.js";
+import { getUser } from "../services/authService.js";
 import { createMovie } from "../services/movieService.js";
 
 const createContent = (onSubmit) => html`
@@ -76,12 +76,13 @@ export const createRender = (ctx) => {
     e.preventDefault();
     const form = new FormData(e.target);
     const objectForm = Object.fromEntries(form);
-    const user = await getUser();
     objectForm.genres = objectForm.genres.split(',');
-    objectForm.actors = objectForm.actors.split(',')
+    objectForm.actors = objectForm.actors.split(',');
+
+    const user = await getUser();
     objectForm['_createdOn'] = user["_createdOn"];
-    const authKey = user.accessToken;
-    createMovie(objectForm, authKey);
+    await createMovie(objectForm);
     ctx.page.redirect('/')
+
   }
 };

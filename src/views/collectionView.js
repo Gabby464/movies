@@ -8,8 +8,7 @@ export const myMoviesRender = (ctx) => {
 
 async function getMine() {
   const userId = JSON.parse(localStorage.getItem("user"))._id;
-  const baseUrl = `http://localhost:3030/data/movies?where=_ownerId%3D%22${userId}%22`;
-  const movies = await getAll(baseUrl);
+  const movies = await getAll(userId);
   if (movies.length < 1) {
     return html`
       <div class="card">

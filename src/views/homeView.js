@@ -29,7 +29,6 @@ export const homeRender = (ctx) => {
 }
 
 async function getMovies(){
-  const baseUrl = 'http://localhost:3030/data/movies'
-    const movies = await getAll(baseUrl);
+    const movies = await getAll();
     return movies.map(movieCard)
 }
