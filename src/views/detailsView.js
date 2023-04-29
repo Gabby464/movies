@@ -7,10 +7,12 @@ ${until(moviePromise, html`<p>Loading<p>`)}
  
 `
 const movieCard = (movie) => html `
- <h1 class="my-4">${movie.title}
-    </h1>
+<h1 class="my-4">${movie.title}  </h1>
+<div class="movie-card">
+
+  
       <div class="row">
-      <div class="col-md-8">
+      <div class="img-poster" >
         <img class="img-fluid" src="${movie.posterUrl}" alt="">
       </div>
       <div class="col-md-4">
@@ -31,6 +33,7 @@ const movieCard = (movie) => html `
         <div class="card-body">
   </div>
       </div>
+    </div>
     </div>
 ` 
 export const detailsRender = (ctx) => {

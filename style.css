@@ -12,3 +12,13 @@ h1{
     display: flex;
     justify-content: center;
 }
+#root{
+    display: grid;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.img-poster{
+    max-width: 100%;
+    height: auto;
+}
